@@ -4,12 +4,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-image: url('../assets/background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: fixed;
     background-color: #efefef;
     text-align: center;
 }
@@ -41,26 +45,25 @@ header span {
 }
 
 .hero {
+    position: relative;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    height: 400px;
-    background: url('/assets/bg-hero.svg') no-repeat center center;
-    background-size: cover;
+    height: 450px;
     color: #EC5228;
-    text-align: left;
+    text-align: center;
     padding: 20px;
-    font-family: 'Poppins', sans-serif;
 }
 
-.hero .text {
-    max-width: 200px;
+.hero .hero-text {
+    max-width: 700px;
 }
 
-.hero .text {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.2;
+.hero .hero-text {
+    font-size: 40px;
+    width: 90%;
+    text-align: center;
 }
 
 .hero p {
@@ -79,23 +82,65 @@ header span {
 }
 
 button {
-    background-color: #EC5228;
-    color: #EFEFEF;
-    border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     margin: 10px;
     font-size: 16px;
-    border-radius: 5px;
+    border: none;
+    background-color: #EC5228;
+    color: #EFEFEF;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
     background-color: #EF9651;
 }
 
-body {
-    background-image: url('../assets/background.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+#options, #input-container {
+    margin-top: 20px;
+}
+
+#input-container {
+    margin-top: 20px;
+}
+
+#shape-image {
+    width: 200px;
+    max-width: 90%;
+    margin: 10px 0;;
+}
+
+#inputs label {
+    display: block;
+    margin: 5px;
+}
+
+input {
+    padding: 5px;
+    font-size: 14px;
+    width: 80px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+.heroWave-bottom, .calWave-top {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;;
 }

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Katik - Kalkulator Matematik</title>
-        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
@@ -12,22 +12,40 @@
             <h1><span>Kalkulator Matematik</span></h1>
         </header>
 
+        <img src="/assets/heroWave-top.svg" class="heroWave-top" alt="wave">
         <section class="hero">
             <div class="hero-text">
                 <h2>Hitung luas dan keliling bangun datar dengan mudah!</h2>
                 <p>Masukkan nilai, tekan hitung, dan dapatkan hasilnya dalam sekejap.</p>
             </div>
         </section>
-        <img src="/assets/wave-1.svg" class="wave-top" alt="wave-1">
+        <img src="/assets/heroWave-bottom.svg" class="heroWave-bottom" alt="wave-2">
+
+        <img src="/assets/calWave-top.svg" class="calWave-top" alt="wave-1">
         <section class="calculator">
-            <h3>Pilih Bangun Datar:</h3>
+            <h3>Pilih Bangun Datar :</h3>
             <div class="button-container">
                 <button id="btn-segitiga">Segitiga</button>
                 <button id="btn-persegi">Persegi</button>
                 <button id="btn-lingkaran">Lingkaran</button>
             </div>
+
+            <div id="options" class="hidden">
+                <h3>Hitung apa?</h3>
+                <button id="btn-luas">Luas</button>
+                <button id="btn-keliling">keliling</button>
+            </div>
+
+            <div id="input-container" style="display: none;">
+                <h3 id="title"></h3>
+                <img id="shape-image" src="" alt="Bangun Datar">
+                <div id="input"></div>
+                <button id="calculate">Hitung</button>
+                <p id="result"></p>
+            </div>
         </section>
-        <img src="/assets/wave-2.svg" class="wave-bottom" alt="wave-2">
-        <script src="js\script.js"></script>
-</body>
+        <img src="/assets/calWave-bottom.svg" class="calWave-bottom" alt="wave-2">
+
+        <script src="js/script.js"></script>
+    </body>
 </html>
